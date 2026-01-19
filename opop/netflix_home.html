@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetFlix</title>
+    <link rel="stylesheet" href="netflix.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1 class="logo">Netflix</h1>
+            <nav>
+                <a href="netflix_home.html" class="active">Inicio</a>
+                <a href="#" id="myListLink">Mi Lista</a>
+            </nav>
+            <div class="user-menu">
+                <span id="profileName"></span>
+                <button id="logoutBtn" class="btn-logout">Salir</button>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="catalog-section">
+            <h2>Catálogo</h2>
+            <div id="catalogList" class="catalog-grid">
+            </div>
+        </section>
+        
+        <section class="catalog-section">
+            <h2>Mi Lista</h2>
+            <div id="favoritesList" class="catalog-grid">
+            </div>
+        </section>
+    </main>
+    
+    <script src="netflix_home.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse - NotFlix</title>
+    <link rel="stylesheet" href="netflix.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-box">
+            <h1>Registrarse</h1>
+            
+            <form id="registerForm">
+                <div class="form-field">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                
+                <div class="form-field">
+                    <input type="password" id="password" placeholder="Contraseña" required>
+                </div>
+                
+                <div class="form-field">
+                    <input type="password" id="confirmPassword" placeholder="Confirmar contraseña" required>
+                </div>
+                
+                <div id="errorMsg" class="error-message"></div>
+                
+                <button type="submit" class="btn btn-primary btn-block">Crear Cuenta</button>
+            </form>
+            
+            <div class="auth-footer">
+                <p>¿Ya tienes cuenta? <a href="netflix_login.html">Inicia sesión</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="netflix_register.js"></script>
+</body>
+</html>
