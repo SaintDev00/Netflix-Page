@@ -29,17 +29,14 @@ form.addEventListener('submit', function(e) {
         return;
     }
     
-    // Obtener usuarios existentes
     let users = JSON.parse(localStorage.getItem('users')) || [];
     
-    // Verificar si el email ya existe
     const userExists = users.find(u => u.email === email);
     if (userExists) {
         showError('Este email ya está registrado');
         return;
     }
     
-    // Crear nuevo usuario con perfil por defecto
     const newUser = {
         email: email,
         password: password,

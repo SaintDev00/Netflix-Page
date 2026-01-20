@@ -10,7 +10,19 @@ body {
     color: #fff;
 }
 
-Landing Page 
+.navbar img{
+    padding: 20px;
+    margin-bottom: 950px;
+    font-size: 0px;
+    background: transparent;
+    width: 150px;
+    position: fixed;
+    top: 0;
+    left: 40px;
+
+
+}
+/* Landing Page  */
 .landing-page {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
     url("./img/CO-en-20260112-TRIFECTA-perspective_a798c254-f9d4-4637-b596-1b1d3690a1f6_large.jpg");
@@ -198,6 +210,12 @@ Landing Page
     border-color: #fff;
 }
 
+.content-imag{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    
+}
 .profile-name {
     color: #808080;
     font-size: 1.2rem;
@@ -206,6 +224,8 @@ Landing Page
 .profile-card:hover .profile-name {
     color: #fff;
 }
+
+
 
 /* Home/Catalog */
 .main-header {
@@ -277,12 +297,12 @@ main {
     gap: 15px;
 }
 
-.content-card {
+/* .content-card {
     position: relative;
     border-radius: 4px;
     overflow: hidden;
     cursor: pointer;
-}
+} */
 
 .content-image {
     width: 100%;
