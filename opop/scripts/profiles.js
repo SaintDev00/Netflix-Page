@@ -1,39 +1,41 @@
 
 const currentUser = sessionStorage.getItem('currentUser');
 if (!currentUser) {
-    window.location.href = 'netflix_login.html';
+    window.location.href = 'login.html';
 }
-
 
 const users = JSON.parse(localStorage.getItem('users')) || [];
 const user = users.find(u => u.email === currentUser);
 
 if (!user) {
-    sessionStorage.removeItem('currentUser');
-    window.location.href = 'netflix_login.html';
+    // sessionStorage.removeItem('currentUser');
+    window.location.href = 'login.html';
 }
 
 function Crear(){
     const profileName = prompt("Ingrese el nombre del nuevo perfil:");
     if (profileName) {
         
-    }}
+    
 
 const profilesList = document.getElementById('profilesList');
-// const profiles = user.profiles;
 
 const perfilUno = document.createElement('div');
     perfilUno.innerHTML = `
         <div class="profile-card">
             <div class="profile-avatar">👤</div>
             
-            
+            <button onclick="Ingresar()">Ingresar</button>
         </div>`
         profilesList.append(perfilUno);
+        
 
+}}
 
-
-// profiles.forEach(profile => {
+function Ingresar() {
+    window.location.href = 'home.html';
+}
+// profilesList.forEach(profile => {
 //     const profileCard = document.createElement('div');
 //     profileCard.className = 'profile-card';
     
@@ -49,7 +51,8 @@ const perfilUno = document.createElement('div');
 //     profileCard.appendChild(profileCard);
 // });
 
-function selectProfile(profile) {
-    sessionStorage.setItem('selectedProfile', JSON.stringify(profile));
-    window.location.href = 'netflix_home.html';
-}
+
+// function selectProfile(profile) {
+//     sessionStorage.setItem('selectedProfile', JSON.stringify(profile));
+//     window.location.href = 'netflix_home.html';
+// }

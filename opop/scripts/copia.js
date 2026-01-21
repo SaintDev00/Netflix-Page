@@ -1,11 +1,11 @@
-const currentUser = sessionStorage.getItem('currentUser');
-const selectedProfile = JSON.parse(sessionStorage.getItem('selectedProfile'));
+// const currentUser = sessionStorage.getItem('currentUser');
+// const selectedProfile = JSON.parse(sessionStorage.getItem('currentUser'));
 
-if (!currentUser || !selectedProfile) {
-    window.location.href = 'netflix_login.html';
-}
+// if (!currentUser || !selectedProfile) {
+//     window.location.href = 'netflix_login.html';
+// }
 
-document.getElementById('profileName').textContent = selectedProfile.name;
+// document.getElementById('profileName').textContent = selectedProfile
 
 const catalog = [
     { id: 1, image: './img/img-1.png', title: 'Stranger Things', category: 'Ciencia Ficción', year: 2016, description: 'Misterios sobrenaturales en un pueblo de Indiana' },
@@ -22,16 +22,16 @@ const catalog = [
     { id: 12,image:'./img/pb.jpg', title: 'Peaky Blinders', category: 'Crimen', year: 2013, description: 'Una familia de gánsteres en Birmingham' }
 ];
 
-const users = JSON.parse(localStorage.getItem('users')) || [];
-const userIndex = users.findIndex(u => u.email === currentUser);
-let userFavorites = users[userIndex].favorites[selectedProfile.id] || [];
+// const users = JSON.parse(localStorage.getItem('users')) || [];
+// const userIndex = users.findIndex(u => u.email === currentUser);
+// let userFavorites = users[userIndex].favorites[selectedProfile.id] || [];
 
 function renderCatalog() {
     const catalogList = document.getElementById('catalogList');
     catalogList.innerHTML = '';
     
     catalog.forEach(item => {
-        const isFavorite = userFavorites.includes(item.id);
+    //     const isFavorite = userFavorites.includes(item.id);
         
         const card = document.createElement('div');
         card.className = 'content-card';
@@ -50,7 +50,7 @@ function renderCatalog() {
             </div>
         `;
         
-        catalogList.appendChild(card);
+        catalogList.append(card);
     });
     
     document.querySelectorAll('.btn-favorite').forEach(btn => {
@@ -119,7 +119,7 @@ function toggleFavorite(itemId) {
 
 document.getElementById('logoutBtn').addEventListener('click', function() {
     sessionStorage.clear();
-    window.location.href = 'netflix_index.html';
+    window.location.href = 'index.html';
 });
 
 document.getElementById('myListLink').addEventListener('click', function(e) {
@@ -128,4 +128,4 @@ document.getElementById('myListLink').addEventListener('click', function(e) {
 });
 
 renderCatalog();
-renderFavorites();
+renderFavorites(); console.log(button)

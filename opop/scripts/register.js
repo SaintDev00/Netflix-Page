@@ -1,11 +1,9 @@
-// Obtener elementos del DOM
 const form = document.getElementById('registerForm');
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
 const confirmPasswordInput = document.getElementById('confirmPassword');
 const errorMsg = document.getElementById('errorMsg');
 
-// Manejar envío del formulario
 form.addEventListener('submit', function(e) {
     e.preventDefault();
     
@@ -13,7 +11,6 @@ form.addEventListener('submit', function(e) {
     const password = passwordInput.value;
     const confirmPassword = confirmPasswordInput.value;
     
-    // Validaciones
     if (!email || !password || !confirmPassword) {
         showError('Todos los campos son obligatorios');
         return;
@@ -49,13 +46,10 @@ form.addEventListener('submit', function(e) {
         favorites: {}
     };
     
-    // Agregar usuario al array
     users.push(newUser);
     
-    // Guardar en localStorage
     localStorage.setItem('users', JSON.stringify(users));
     
-    // Redirigir al login
     window.location.href = 'netflix_login.html';
 });
 

@@ -1,6 +1,5 @@
 
 (function() {
-    // Verificar si ya se inicializó antes
     if (localStorage.getItem('initialized') === 'true') {
         return;
     }
@@ -15,7 +14,7 @@
                 password: '123456',
                 profiles: [
                     { id: 1, name: 'Admin' },
-                    { id: 2, name: 'Usuario 2' }
+                    // { id: 2, name: 'Usuario 2' }
                 ],
                 favorites: {
                     1: [1, 5, 9],
