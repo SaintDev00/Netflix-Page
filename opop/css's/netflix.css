@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
     font-family: Arial, sans-serif;
     color: #ffffff;
     width: 100%;
+    background-image: url(../img/CO-en-20260112-TRIFECTA-perspective_a798c254-f9d4-4637-b596-1b1d3690a1f6_large.jpg);
 }
 
 .navbar img{
@@ -25,7 +27,7 @@ body {
 
 .landing-page {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-    url("./img/CO-en-20260112-TRIFECTA-perspective_a798c254-f9d4-4637-b596-1b1d3690a1f6_large.jpg");
+    url("../img/CO-en-20260112-TRIFECTA-perspective_a798c254-f9d4-4637-b596-1b1d3690a1f6_large.jpg");
     min-height: 100vh;
     display: flex;
     align-items: center;
