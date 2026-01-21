@@ -8,7 +8,7 @@ const users = JSON.parse(localStorage.getItem('users')) || [];
 const user = users.find(u => u.email === currentUser);
 
 if (!user) {
-    // sessionStorage.removeItem('currentUser');
+    sessionStorage.removeItem('currentUser');
     window.location.href = 'login.html';
 }
 

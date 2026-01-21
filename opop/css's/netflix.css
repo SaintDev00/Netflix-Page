@@ -14,14 +14,12 @@ body {
 
 .navbar img{
     padding: 20px;
-    margin-bottom: 950px;
-    font-size: 30px;
-    background: transparent;
-    width: 160px;
-    height: 105px;
+    margin-top: 10px;
+    width: 220px;
+    height: 150px;
     position: fixed;
     top: 0;
-    left: 20px;
+    left: 170px;
 }
 
 
@@ -129,12 +127,24 @@ body {
     font-size: 16px;
     cursor: pointer;
     text-decoration: none;
-    display: inline-block;
+    display:flex;
+    
+
 }
 
 .btn-primary {
+    position: relative;
+    left: 165px;
     background: #e50914;
     color: #fff;
+    gap: 11px;
+    height: 50px;
+    align-items: center;
+}
+
+.btn-primary span{
+    font-size: 22px;
+
 }
 
 .btn-primary:hover {
@@ -142,9 +152,18 @@ body {
 }
 
 .btn-secondary {
-    background: transparent;
+    display: flex;
+    position: relative;
+    background: red;
     color: #fff;
-    border: 1px solid #fff;
+    left: 900px;
+    bottom: 500px;
+    width: 160px;
+    height:37px;
+    align-items:center ;
+    justify-content: center;
+    overflow-wrap: break-word;
+    
 }
 
 .btn-secondary:hover {
