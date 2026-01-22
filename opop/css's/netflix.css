@@ -22,6 +22,15 @@ body {
     left: 170px;
 }
 
+.navbar .idioma{
+    position: absolute;
+    left: 1330px;
+    width: 170px;
+    height: 80px;
+    margin-top: 108px;
+    opacity: 0.8;
+}
+
 
 .landing-page {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
@@ -38,10 +47,10 @@ body {
     padding: 20px;
 }
 
-/* .landing-content{
-  
-    justify-items: center;
-} */
+.landing-content{
+  margin-top: 40px;
+    
+}
 
 
 .landing-content h1 {
@@ -67,6 +76,8 @@ body {
     display: flex;
     gap: 1px;
     justify-content: center;
+    margin-top: 30px;
+    margin-left: 10px;
 }
 
 .landing-buttons input{
@@ -183,15 +194,6 @@ body {
     white-space: nowrap;
 }
 
-
-
-
-
-
-
-.btn-secondary:hover {
-    background: rgba(255,255,255,0.1);
-}
 
 .btn-block {
     width: 100%;
