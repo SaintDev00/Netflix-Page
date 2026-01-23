@@ -22,13 +22,19 @@ body {
     left: 170px;
 }
 
-.navbar .idioma{
+.navbar select{
     position: absolute;
     left: 1330px;
-    width: 170px;
-    height: 80px;
-    margin-top: 108px;
-    opacity: 0.8;
+    bottom: 723px;
+    width: 120px;
+    height: 37px;
+    background-color: transparent;
+    color: white;
+    border: solid white
+}
+
+.navbar li{
+    list-style: none;
 }
 
 
